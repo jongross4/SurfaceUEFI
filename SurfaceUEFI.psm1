@@ -11,8 +11,6 @@ function Unlock-SurfaceUEFI
     [Parameter(mandatory=$true)][string]$UEFIPassword
   )
 
-  [System.Reflection.Assembly]::Load('SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705') | Out-Null
-
   Write-Debug "Unlocking the UEFI BIOS with password [$UEFIPassword]"
   Write-Verbose "Unlocking the UEFI BIOS with password [$UEFIPassword]"
 
