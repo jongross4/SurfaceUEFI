@@ -12,7 +12,7 @@
 RootModule = 'SurfaceUEFI.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.1.0.0'
+ModuleVersion = '0.1.0.1'
 
 # ID used to uniquely identify this module
 GUID = 'c22f710b-6465-4961-a662-345b08d087fb'
