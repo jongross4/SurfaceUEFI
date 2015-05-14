@@ -37,7 +37,7 @@ Function Get-SurfaceUEFISetting
   If($Setting -eq 'All'){
     $Settings = [Microsoft.Surface.FirmwareOption]::All() 
   } else {
-  $Settings =[Microsoft.Surface.FirmwareOption]::Equals($Setting) }
+  $Settings =[Microsoft.Surface.FirmwareOption]::Find($Setting) }
 
   $Settings
 }
@@ -101,7 +101,7 @@ Function Set-SurfaceUEFISetting
   Write-Debug "Setting setting [$Setting] with password [$UEFIPassword] to value [$Value]"
   Write-Verbose "Setting setting [$Setting] with password [$UEFIPassword] to value [$Value]"
 
-  $UEFISetting = [Microsoft.Surface.FirmwareOption]::Equals($Setting)   
+  $UEFISetting = [Microsoft.Surface.FirmwareOption]::Find($Setting)   
   Write-Debug "RegEx is [$($UEFISetting.RegEx)]"
   Write-Verbose "RegEx is [$($UEFISetting.RegEx)]"
    
