@@ -131,7 +131,7 @@ function Test-SurfaceUEFISetting
 
   Unlock-SurfaceUEFI -UEFIPassword $UEFIPassword
 
-  $CurrentSetting =[Microsoft.Surface.FirmwareOption]::Equals($Setting) 
+  $CurrentSetting =[Microsoft.Surface.FirmwareOption]::Find($Setting) 
 
   if($ProposedValue) {
     $CurrentSetting.ProposedValue -eq $Value
