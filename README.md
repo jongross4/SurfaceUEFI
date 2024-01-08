@@ -1,6 +1,6 @@
 # SurfaceUEFI
 
-#This is retired
+# This is retired
 
 PowerShell Module and DSC resource to manage UEFI
 
